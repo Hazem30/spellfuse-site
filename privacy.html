@@ -3,44 +3,52 @@
 <title>SpellFuse Privacy Policy</title><link rel="stylesheet" href="style.css"></head>
 <body><header><div class="wrap"><a href="./">SpellFuse</a><h1>Privacy policy</h1></div></header>
 <main>
-<p class="muted">Effective 25 October 2026</p>
+<p class="muted">Effective 28 October 2026</p>
 <p>This policy explains what the SpellFuse app ("SpellFuse", "we") collects, why, and the choices you have. SpellFuse has no accounts and does not ask for your name, email address, contacts, photos, location or microphone.</p>
 
 <h2>Data stored only on your device</h2>
 <p>Your game progress, records, achievements, streak, settings and any unfinished run are stored on your device. They are not sent to us. Deleting the app deletes them.</p>
 
 <h2>Anonymous play data and crash reports</h2>
-<p>If <em>Share anonymous play data</em> is on in Settings (it is on by default), SpellFuse uses Google's Firebase Analytics and Firebase Crashlytics:</p>
+<p>If <em>Share anonymous play data</em> is enabled by you in Settings (it starts off on new installs), SpellFuse uses Google's Firebase Analytics and Firebase Crashlytics:</p>
 <ul>
 <li><strong>Game events</strong>, such as starting or finishing a run, the tutorial steps, word length and score, merges, rescues used and pauses. These help us find confusing parts of the game and balance difficulty. They do <strong>not</strong> include the words you spell, your name or any account.</li>
 <li><strong>Crash reports</strong> when the app crashes: device model, iOS version, app version and technical details of the crash.</li>
+<li><strong>Ad performance</strong>: ad load/show/failure outcomes, voluntary reward use and the impression value/currency reported by the ad SDK. These measurements are estimates, not your spending or payment details. When a limited ad comparison is enabled, a saved group assignment and the group label help compare ad settings and returning play. The assignment bucket stays on your device.</li>
 <li>Firebase also assigns a random app-instance identifier and records basic device and app information. Google may use your IP address to estimate your country. Firebase does not use the advertising identifier (IDFA); ad tracking only happens through AdMob and only if you allow it (see Ads).</li>
 </ul>
 <p>Analytics data is kept for 2 months and crash reports for about 90 days, then deleted. Google processes this data for us under its <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>.</p>
 
+<h2>Ad configuration</h2>
+<p>Ad-enabled versions use Firebase Remote Config to receive ad limits and an emergency switch that can stop new ads. Firebase uses an installation identifier and technical app/device information to deliver these settings. This operational configuration is separate from optional analytics and crash reporting; turning play-data sharing off does not stop configuration requests or delete that installation identifier. The app uses saved settings or local defaults when offline.</p>
+
 <h2>Your choices</h2>
 <ul>
-<li><strong>Turn sharing off:</strong> Settings → <em>Share anonymous play data</em>. This stops analytics and crash reporting, resets this device's analytics identifier and deletes crash reports that haven't been sent.</li>
+<li><strong>Turn sharing off:</strong> Settings → <em>Share anonymous play data</em>. This stops new gameplay analytics, crash reporting and optional RevenueCat ad-event forwarding, resets this device's Firebase analytics identifier and deletes crash reports that haven't been sent. Previously consented events already queued by a provider may finish uploading. Essential purchase verification, restoration and ad configuration are separate.</li>
 <li><strong>Deletion requests:</strong> because the data isn't linked to your identity, turning sharing off is the most effective way to separate past data from you. For anything else, <a href="support.html">contact us</a>.</li>
 </ul>
 
 <h2>Ads</h2>
-<p>SpellFuse is free and shows ads from Google AdMob: optional rewarded ads you choose to watch (for example to continue a run or get a puzzle hint) and occasional full-screen ads between runs or levels. Ads never appear during active play, in the official Daily, or on your first day of play.</p>
+<p>SpellFuse is free and shows ads from Google AdMob: optional rewarded ads you choose to watch (for example to continue a run or get a puzzle hint) and occasional full-screen ads between finished runs or solved levels. Between-round ads are capped and never appear during active play, in the official Daily, or on your first day. Optional rewarded ads appear only when you choose an eligible offer; gameplay pauses while they are shown.</p>
 <ul>
 <li><strong>What AdMob collects:</strong> Google's Mobile Ads SDK collects device and app information, ad interactions (ads shown and tapped), diagnostic data about ad loading, an approximate location derived from your IP address and, only if you allow it, your device's advertising identifier (IDFA). Google uses this to deliver, measure and, with permission, personalize ads. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</li>
+<li><strong>Advertising partners:</strong> AdMob mediation includes Unity Ads and Liftoff Monetize. When their services participate in ad delivery, they process ad, device, network and consent information under their policies and the available platform permissions. See <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's game-player privacy policy</a> and <a href="https://liftoff.io/privacy-policy/">Liftoff's privacy policy</a>. Their operational ad processing is separate from optional play-data sharing.</li>
+<li><strong>Optional RevenueCat ad measurement:</strong> when you enable Share anonymous play data, RevenueCat receives ad lifecycle events and reported impression value, currency and precision, together with ad format, placement, unit, demand network, impression/correlation identifiers and its anonymous customer identifier. This helps us compare advertising and purchase income. We do not attach your name, email, words played or IDFA to these RevenueCat events. Test ad activity is kept out of live Apple RevenueCat reporting. Values are estimates and do not represent your spending.</li>
 <li><strong>Tracking permission:</strong> iOS asks whether SpellFuse may track you across other companies' apps and websites. If you allow it, ads can be personalized. If you choose "Ask App Not to Track", ads are non-personalized and the advertising identifier is not used. You can change this any time in iOS Settings → Privacy &amp; Security → Tracking.</li>
 <li><strong>Consent (EEA, UK and other regions where required):</strong> before any ad is requested, Google's consent form asks for your choices. You can change them later in the app under Settings → <em>Ad privacy choices</em>.</li>
 <li>Whatever you choose, the whole game stays free and playable.</li>
 </ul>
 
 <h2>Purchases</h2>
-<p>An optional one-time purchase removes the between-level ads. Purchases are processed by Apple; we never receive your payment details.</p>
+<p>The optional one-time Remove Ads purchase removes between-round ads in every mode and increases the free daily hint allowance from three to six. Rewarded ads remain optional. Apple processes payment and Restore Purchases authentication; we never receive your Apple Account credentials or payment details. Restore Purchases is available in Settings for devices using the same Apple Account.</p>
+<p>RevenueCat manages purchase verification, entitlement checks, restoration and purchase support in versions configured to use it. RevenueCat receives the store purchase records needed to verify access, an automatically generated anonymous customer identifier and operational app/device/network information. Its purchase screens and Customer Center can also report screen views, interactions and support-flow events. We do not associate this identifier with a game login, name, email or advertising identifier. Diagnostic reporting and automatic attribution identifier collection are disabled in our RevenueCat configuration. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
+<p>Essential purchase processing and purchase-flow events are separate from optional gameplay/ad measurement and continue when play-data sharing is off. App-owned purchase caches store product and ownership information locally for offline access; RevenueCat also maintains its own SDK cache and server purchase history. Purchase records are retained as needed to verify and restore access, prevent fraud and meet legal obligations; the Firebase analytics retention period does not apply to RevenueCat. Contact support about purchase-data requests without posting receipts, Apple Account details or payment information publicly. Versions without RevenueCat use Apple's StoreKit directly.</p>
 
 <h2>Children</h2>
 <p>SpellFuse is a general-audience game and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
 
 <h2>We don't sell your data</h2>
-<p>We do not sell or rent personal information. Data is shared only with the service providers described above (Google Firebase and Google AdMob), and with AdMob's advertising partners only as described in the Ads section and only with your permission where required.</p>
+<p>We do not sell or rent personal information. Data is shared with the service providers described above (Google Firebase, Google AdMob and its advertising partners, Apple and RevenueCat) for the stated purposes, subject to consent and platform permissions where required.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, we will update the effective date above and, for significant changes, tell you in the app.</p>
